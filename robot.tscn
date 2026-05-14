@@ -2,9 +2,16 @@
 
 [ext_resource type="Texture2D" uid="uid://b014cl6g6amej" path="res://player/player.png" id="1_3cn6f"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3cn6f"]
+size = Vector2(32, 32)
+
 [node name="robot" type="CharacterBody2D" unique_id=771216797]
 position = Vector2(110, 46)
+disable_mode = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1680686774]
 texture = ExtResource("1_3cn6f")
 hframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1711849170]
+shape = SubResource("RectangleShape2D_3cn6f")

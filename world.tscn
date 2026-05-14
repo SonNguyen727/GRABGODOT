@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://duce1js2k5ycf" path="res://robot.tscn" id="1_fj7yv"]
 [ext_resource type="Texture2D" uid="uid://cg65ihg3xkn7j" path="res://world/grass_background.png" id="1_tlwt5"]
 [ext_resource type="Script" uid="uid://c17u2g1qhhvr0" path="res://robot.gd" id="2_tlwt5"]
+[ext_resource type="PackedScene" uid="uid://bh7r8vnjl1m7u" path="res://arm.tscn" id="3_tlwt5"]
 
 [node name="World" type="Node2D" unique_id=1300613891]
 
@@ -15,3 +16,5 @@ stretch_mode = 1
 [node name="robot" parent="." unique_id=771216797 instance=ExtResource("1_fj7yv")]
 position = Vector2(118, 74)
 script = ExtResource("2_tlwt5")
+
+[node name="arm" parent="." unique_id=866574625 instance=ExtResource("3_tlwt5")]

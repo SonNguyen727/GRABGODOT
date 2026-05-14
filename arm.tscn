@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://bh7r8vnjl1m7u"]
+
+[ext_resource type="Script" uid="uid://cn5dklraqr1yw" path="res://arm.gd" id="1_m8ymp"]
+[ext_resource type="Texture2D" uid="uid://d3h7jec4ss1pb" path="res://player/sprite.png" id="2_wbqlu"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_s02i6"]
+radius = 4.8759155
+height = 21.257965
+
+[node name="arm" type="Node2D" unique_id=866574625]
+position = Vector2(0, 1)
+script = ExtResource("1_m8ymp")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1790344947]
+position = Vector2(18, 12)
+texture = ExtResource("2_wbqlu")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1601731055]
+position = Vector2(3, 4)
+disable_mode = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1468379201]
+position = Vector2(-2, -3.0000076)
+rotation = 0.8667356
+shape = SubResource("CapsuleShape2D_s02i6")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
