@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://duce1js2k5ycf"]
+
+[ext_resource type="Texture2D" uid="uid://b014cl6g6amej" path="res://player/player.png" id="1_3cn6f"]
+
+[node name="robot" type="CharacterBody2D" unique_id=771216797]
+position = Vector2(110, 46)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1680686774]
+texture = ExtResource("1_3cn6f")
+hframes = 4
