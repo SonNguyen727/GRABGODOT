@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://c1t72k6odd4xv" path="res://wall.tscn" id="4_aqk2v"]
 [ext_resource type="PackedScene" uid="uid://dmykyvfbhc0al" path="res://levelcomplete.tscn" id="5_dwbse"]
 [ext_resource type="Script" uid="uid://bvs4byapi57r5" path="res://levelcomplete.gd" id="6_pkg7o"]
+[ext_resource type="PackedScene" uid="uid://crt8bkycncbge" path="res://uilevelcomplete.tscn" id="7_level_ui"]
 
 [node name="World" type="Node2D" unique_id=1300613891]
 
@@ -19,6 +20,8 @@ position = Vector2(99, 146)
 [node name="StaticBody2D" parent="." unique_id=1049344274 instance=ExtResource("4_aqk2v")]
 position = Vector2(1, 1)
 
-[node name="Area2D" parent="." unique_id=1063207454 instance=ExtResource("5_dwbse")]
-position = Vector2(312, 93)
+[node name="heart_goal" parent="." unique_id=1063207454 instance=ExtResource("5_dwbse")]
+position = Vector2(305, 96)
 script = ExtResource("6_pkg7o")
+
+[node name="LevelUI" parent="." unique_id=2070637358 instance=ExtResource("7_level_ui")]

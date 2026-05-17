@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://duce1js2k5ycf"]
 
-[ext_resource type="Texture2D" uid="uid://mkvrh8pwvk5h" path="res://art/Robot/chinhdien1.png" id="1_yhfw1"]
-[ext_resource type="Texture2D" uid="uid://deird0m3rfr8c" path="res://art/Robot/robotpng-export.png" id="2_ru5oq"]
-[ext_resource type="Texture2D" uid="uid://b6y4brwj4p4b7" path="res://art/Robot/Sprite-0001.png" id="3_7xofo"]
+[ext_resource type="Texture2D" uid="uid://ws3nn4meuxw4" path="res://art/Robot/phai1.png" id="1_yhfw1"]
+[ext_resource type="Texture2D" uid="uid://gr6prupfwnlw" path="res://art/Robot/phai2.png" id="2_ru5oq"]
+[ext_resource type="Texture2D" uid="uid://b14mtet7df510" path="res://art/Robot/phai3.png" id="3_7xofo"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_yyxj1"]
 animations = [{

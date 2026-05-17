@@ -1,27 +1,70 @@
-[gd_scene format=3 uid="uid://bh7r8vnjl1m7u"]
+[gd_scene load_steps=8 format=3 uid="uid://bh7r8vnjl1m7u"]
 
 [ext_resource type="Script" uid="uid://cn5dklraqr1yw" path="res://arm.gd" id="1_m8ymp"]
+[ext_resource type="Script" path="res://force_bar.gd" id="2_force_bar"]
 [ext_resource type="Texture2D" uid="uid://d3h7jec4ss1pb" path="res://player/sprite.png" id="2_wbqlu"]
+[ext_resource type="Texture2D" path="res://ui/arrows/arrow_up.svg" id="3_arrow_up"]
+[ext_resource type="Texture2D" path="res://ui/arrows/arrow_down.svg" id="4_arrow_down"]
+[ext_resource type="Texture2D" path="res://ui/arrows/arrow_left.svg" id="5_arrow_left"]
+[ext_resource type="Texture2D" path="res://ui/arrows/arrow_right.svg" id="6_arrow_right"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_s02i6"]
 radius = 1.2946413
 height = 2.5892825
 
-[node name="arm" type="Node2D" unique_id=866574625]
+[node name="arm" type="Node2D"]
 position = Vector2(0, 1)
 script = ExtResource("1_m8ymp")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1790344947]
+[node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(18, 12)
 texture = ExtResource("2_wbqlu")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=1601731055]
+[node name="AimArrows" type="Node2D" parent="."]
+visible = false
+position = Vector2(18, 12)
+
+[node name="ArrowUp" type="Sprite2D" parent="AimArrows"]
+position = Vector2(0, -14)
+texture = ExtResource("3_arrow_up")
+
+[node name="ArrowDown" type="Sprite2D" parent="AimArrows"]
+position = Vector2(0, 14)
+texture = ExtResource("4_arrow_down")
+
+[node name="ArrowLeft" type="Sprite2D" parent="AimArrows"]
+position = Vector2(-14, 0)
+texture = ExtResource("5_arrow_left")
+
+[node name="ArrowRight" type="Sprite2D" parent="AimArrows"]
+position = Vector2(14, 0)
+texture = ExtResource("6_arrow_right")
+
+[node name="ForceBarLayer" type="CanvasLayer" parent="."]
+
+[node name="ForceBar" type="Control" parent="ForceBarLayer"]
+visible = false
+layout_mode = 0
+offset_right = 36.0
+offset_bottom = 5.0
+script = ExtResource("2_force_bar")
+
+[node name="Bg" type="ColorRect" parent="ForceBarLayer/ForceBar"]
+layout_mode = 0
+offset_right = 36.0
+offset_bottom = 5.0
+color = Color(0.07, 0.09, 0.14, 1)
+
+[node name="Fill" type="ColorRect" parent="ForceBarLayer/ForceBar"]
+layout_mode = 0
+offset_bottom = 5.0
+color = Color(0.93, 0.91, 0.82, 1)
+
+[node name="Area2D" type="Area2D" parent="."]
 position = Vector2(3, 4)
 disable_mode = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1468379201]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(-2, -3.0000076)
 rotation = 0.8667356
 shape = SubResource("CapsuleShape2D_s02i6")
-
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

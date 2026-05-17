@@ -1,0 +1,115 @@
+[gd_scene format=3 uid="uid://b16i3rts6kb0y"]
+
+[ext_resource type="Script" uid="uid://bvoct7ct0y765" path="res://main_menu.gd" id="1_menu"]
+
+[node name="MainMenu" type="Node" unique_id=2016286114]
+script = ExtResource("1_menu")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=439748252]
+
+[node name="UI" type="Control" parent="CanvasLayer" unique_id=2096654169]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="ColorRect" parent="CanvasLayer/UI" unique_id=1118166917]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.07, 0.09, 0.14, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/UI" unique_id=1752917880]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MenuButtons" type="VBoxContainer" parent="CanvasLayer/UI/CenterContainer" unique_id=1995887868]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="Title" type="Label" parent="CanvasLayer/UI/CenterContainer/MenuButtons" unique_id=1551182418 groups=["menu_ui"]]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.93, 0.91, 0.82, 1)
+theme_override_font_sizes/font_size = 20
+text = "GRAB"
+horizontal_alignment = 1
+
+[node name="PlayButton" type="Button" parent="CanvasLayer/UI/CenterContainer/MenuButtons" unique_id=988754403 groups=["menu_ui"]]
+custom_minimum_size = Vector2(128, 28)
+layout_mode = 2
+text = "PLAY"
+
+[node name="SettingsButton" type="Button" parent="CanvasLayer/UI/CenterContainer/MenuButtons" unique_id=1036618870 groups=["menu_ui"]]
+custom_minimum_size = Vector2(128, 28)
+layout_mode = 2
+text = "SETTING"
+
+[node name="ExitButton" type="Button" parent="CanvasLayer/UI/CenterContainer/MenuButtons" unique_id=1903500890 groups=["menu_ui"]]
+custom_minimum_size = Vector2(128, 28)
+layout_mode = 2
+text = "EXIT"
+
+[node name="SettingsPanel" type="Control" parent="CanvasLayer/UI" unique_id=713278571]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="ColorRect" parent="CanvasLayer/UI/SettingsPanel" unique_id=1071359042]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.07, 0.09, 0.14, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/UI/SettingsPanel" unique_id=448805982]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SettingsButtons" type="VBoxContainer" parent="CanvasLayer/UI/SettingsPanel/CenterContainer" unique_id=289884697]
+layout_mode = 2
+theme_override_constants/separation = 12
+alignment = 1
+
+[node name="SettingsTitle" type="Label" parent="CanvasLayer/UI/SettingsPanel/CenterContainer/SettingsButtons" unique_id=517737053 groups=["menu_ui"]]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.93, 0.91, 0.82, 1)
+theme_override_font_sizes/font_size = 16
+text = "SETTING"
+horizontal_alignment = 1
+
+[node name="SettingsHint" type="Label" parent="CanvasLayer/UI/SettingsPanel/CenterContainer/SettingsButtons" unique_id=451807777 groups=["menu_ui"]]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.93, 0.91, 0.82, 1)
+theme_override_font_sizes/font_size = 10
+text = "More options later"
+horizontal_alignment = 1
+
+[node name="BackButton" type="Button" parent="CanvasLayer/UI/SettingsPanel/CenterContainer/SettingsButtons" unique_id=1225456302 groups=["menu_ui"]]
+custom_minimum_size = Vector2(128, 28)
+layout_mode = 2
+text = "BACK"
+
+[connection signal="pressed" from="CanvasLayer/UI/CenterContainer/MenuButtons/PlayButton" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="CanvasLayer/UI/CenterContainer/MenuButtons/SettingsButton" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="CanvasLayer/UI/CenterContainer/MenuButtons/ExitButton" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="CanvasLayer/UI/SettingsPanel/CenterContainer/SettingsButtons/BackButton" to="." method="_on_settings_back_pressed"]
