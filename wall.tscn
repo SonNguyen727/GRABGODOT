@@ -1,0 +1,403 @@
+[gd_scene format=3 uid="uid://c1t72k6odd4xv"]
+
+[ext_resource type="Texture2D" uid="uid://co88sh422u601" path="res://art/Gạch/gach8.png" id="1_0m056"]
+[ext_resource type="Texture2D" uid="uid://d2whxgxoprcjq" path="res://art/Gạch/gach5.png" id="2_ip0a1"]
+[ext_resource type="Texture2D" uid="uid://dilh7lim21ubd" path="res://art/Gạch/gach3.png" id="3_w36hb"]
+[ext_resource type="Texture2D" uid="uid://cd4s5txl76spb" path="res://art/Gạch/gach4.png" id="4_h2xgo"]
+[ext_resource type="Texture2D" uid="uid://c7yr8piyuxu72" path="res://art/Gạch/gach6.png" id="5_vbm8d"]
+[ext_resource type="Texture2D" uid="uid://ke3b4n2ixe4l" path="res://art/Gạch/gach2.png" id="6_ierck"]
+[ext_resource type="Texture2D" uid="uid://drd7hcg7gyb63" path="res://art/Gạch/gach10.png" id="7_kyjxe"]
+[ext_resource type="Texture2D" uid="uid://dw0f5v447cutg" path="res://art/Gạch/gach9.png" id="8_ip0a1"]
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=1049344274]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=540080728]
+
+[node name="Gach8" type="Sprite2D" parent="Sprite2D" unique_id=1250636433]
+position = Vector2(10, 5)
+texture = ExtResource("1_0m056")
+
+[node name="Gach5" type="Sprite2D" parent="Sprite2D" unique_id=89073955]
+position = Vector2(29, 5)
+texture = ExtResource("2_ip0a1")
+
+[node name="Gach3" type="Sprite2D" parent="Sprite2D" unique_id=299696819]
+position = Vector2(50, 5)
+texture = ExtResource("3_w36hb")
+
+[node name="Gach6" type="Sprite2D" parent="Sprite2D" unique_id=649291259]
+position = Vector2(66, 5)
+texture = ExtResource("2_ip0a1")
+
+[node name="Gach4" type="Sprite2D" parent="Sprite2D" unique_id=1202311334]
+position = Vector2(81, 5)
+texture = ExtResource("4_h2xgo")
+
+[node name="Gach7" type="Sprite2D" parent="Sprite2D" unique_id=379618782]
+position = Vector2(97, 5)
+texture = ExtResource("4_h2xgo")
+
+[node name="Gach9" type="Sprite2D" parent="Sprite2D" unique_id=1244841237]
+position = Vector2(119, 5)
+texture = ExtResource("5_vbm8d")
+
+[node name="Gach10" type="Sprite2D" parent="Sprite2D" unique_id=2104027210]
+position = Vector2(140, 5)
+texture = ExtResource("1_0m056")
+
+[node name="Gach11" type="Sprite2D" parent="Sprite2D" unique_id=530219266]
+position = Vector2(159, 5)
+texture = ExtResource("2_ip0a1")
+
+[node name="Gach12" type="Sprite2D" parent="Sprite2D" unique_id=1676698337]
+position = Vector2(180, 5)
+texture = ExtResource("3_w36hb")
+
+[node name="Gach13" type="Sprite2D" parent="Sprite2D" unique_id=1736032837]
+position = Vector2(196, 5)
+texture = ExtResource("2_ip0a1")
+
+[node name="Gach14" type="Sprite2D" parent="Sprite2D" unique_id=1089126430]
+position = Vector2(211, 5)
+texture = ExtResource("4_h2xgo")
+
+[node name="Gach15" type="Sprite2D" parent="Sprite2D" unique_id=2078956390]
+position = Vector2(227, 5)
+texture = ExtResource("4_h2xgo")
+
+[node name="Gach16" type="Sprite2D" parent="Sprite2D" unique_id=53104063]
+position = Vector2(249, 5)
+texture = ExtResource("5_vbm8d")
+
+[node name="Gach17" type="Sprite2D" parent="Sprite2D" unique_id=1270556427]
+position = Vector2(10, 175)
+texture = ExtResource("1_0m056")
+
+[node name="Gach18" type="Sprite2D" parent="Sprite2D" unique_id=1409897267]
+position = Vector2(29, 175)
+texture = ExtResource("2_ip0a1")
+
+[node name="Gach19" type="Sprite2D" parent="Sprite2D" unique_id=570632217]
+position = Vector2(50, 175)
+texture = ExtResource("3_w36hb")
+
+[node name="Gach20" type="Sprite2D" parent="Sprite2D" unique_id=161603056]
+position = Vector2(66, 175)
+texture = ExtResource("2_ip0a1")
+
+[node name="Gach21" type="Sprite2D" parent="Sprite2D" unique_id=1555109844]
+position = Vector2(81, 175)
+texture = ExtResource("4_h2xgo")
+
+[node name="Gach22" type="Sprite2D" parent="Sprite2D" unique_id=1848134791]
+position = Vector2(97, 175)
+texture = ExtResource("4_h2xgo")
+
+[node name="Gach23" type="Sprite2D" parent="Sprite2D" unique_id=787226306]
+position = Vector2(119, 175)
+texture = ExtResource("5_vbm8d")
+
+[node name="Gach24" type="Sprite2D" parent="Sprite2D" unique_id=1763463863]
+position = Vector2(140, 175)
+texture = ExtResource("1_0m056")
+
+[node name="Gach25" type="Sprite2D" parent="Sprite2D" unique_id=218854619]
+position = Vector2(159, 175)
+texture = ExtResource("2_ip0a1")
+
+[node name="Gach26" type="Sprite2D" parent="Sprite2D" unique_id=840074563]
+position = Vector2(180, 175)
+texture = ExtResource("3_w36hb")
+
+[node name="Gach27" type="Sprite2D" parent="Sprite2D" unique_id=1947414028]
+position = Vector2(196, 175)
+texture = ExtResource("2_ip0a1")
+
+[node name="Gach28" type="Sprite2D" parent="Sprite2D" unique_id=1605076293]
+position = Vector2(211, 175)
+texture = ExtResource("4_h2xgo")
+
+[node name="Gach29" type="Sprite2D" parent="Sprite2D" unique_id=240439059]
+position = Vector2(227, 175)
+texture = ExtResource("4_h2xgo")
+
+[node name="Gach30" type="Sprite2D" parent="Sprite2D" unique_id=906995928]
+position = Vector2(249, 175)
+texture = ExtResource("5_vbm8d")
+
+[node name="Gach31" type="Sprite2D" parent="Sprite2D" unique_id=429002265]
+position = Vector2(268, 175)
+texture = ExtResource("2_ip0a1")
+
+[node name="Gach32" type="Sprite2D" parent="Sprite2D" unique_id=1888629057]
+position = Vector2(289, 175)
+texture = ExtResource("1_0m056")
+
+[node name="Gach33" type="Sprite2D" parent="Sprite2D" unique_id=373675181]
+position = Vector2(308, 175)
+texture = ExtResource("5_vbm8d")
+
+[node name="Gach34" type="Sprite2D" parent="Sprite2D" unique_id=1598081950]
+position = Vector2(268, 5)
+texture = ExtResource("2_ip0a1")
+
+[node name="Gach35" type="Sprite2D" parent="Sprite2D" unique_id=167732873]
+position = Vector2(289, 5)
+texture = ExtResource("1_0m056")
+
+[node name="Gach36" type="Sprite2D" parent="Sprite2D" unique_id=655636893]
+position = Vector2(308, 5)
+texture = ExtResource("5_vbm8d")
+
+[node name="Gach2" type="Sprite2D" parent="Sprite2D" unique_id=1740022047]
+position = Vector2(4, 15)
+texture = ExtResource("6_ierck")
+
+[node name="Gach37" type="Sprite2D" parent="Sprite2D" unique_id=54336723]
+position = Vector2(4, 24)
+texture = ExtResource("7_kyjxe")
+
+[node name="Gach38" type="Sprite2D" parent="Sprite2D" unique_id=1393833442]
+position = Vector2(4, 34)
+texture = ExtResource("6_ierck")
+
+[node name="Gach39" type="Sprite2D" parent="Sprite2D" unique_id=1171988084]
+position = Vector2(4, 45)
+texture = ExtResource("6_ierck")
+
+[node name="Gach40" type="Sprite2D" parent="Sprite2D" unique_id=313090949]
+position = Vector2(4, 55)
+texture = ExtResource("7_kyjxe")
+
+[node name="Gach41" type="Sprite2D" parent="Sprite2D" unique_id=1032492047]
+position = Vector2(4, 66)
+texture = ExtResource("6_ierck")
+
+[node name="Gach42" type="Sprite2D" parent="Sprite2D" unique_id=1621085856]
+position = Vector2(4, 76)
+texture = ExtResource("7_kyjxe")
+
+[node name="Gach43" type="Sprite2D" parent="Sprite2D" unique_id=326063148]
+position = Vector2(4, 85)
+texture = ExtResource("6_ierck")
+
+[node name="Gach44" type="Sprite2D" parent="Sprite2D" unique_id=1854989136]
+position = Vector2(4, 96)
+texture = ExtResource("7_kyjxe")
+
+[node name="Gach45" type="Sprite2D" parent="Sprite2D" unique_id=1307908511]
+position = Vector2(4, 107)
+texture = ExtResource("7_kyjxe")
+
+[node name="Gach46" type="Sprite2D" parent="Sprite2D" unique_id=520222694]
+position = Vector2(4, 118)
+texture = ExtResource("6_ierck")
+
+[node name="Gach47" type="Sprite2D" parent="Sprite2D" unique_id=1101981635]
+position = Vector2(4, 127)
+texture = ExtResource("7_kyjxe")
+
+[node name="Gach48" type="Sprite2D" parent="Sprite2D" unique_id=799526260]
+position = Vector2(4, 136)
+texture = ExtResource("6_ierck")
+
+[node name="Gach49" type="Sprite2D" parent="Sprite2D" unique_id=781989089]
+position = Vector2(4, 147)
+texture = ExtResource("7_kyjxe")
+
+[node name="Gach50" type="Sprite2D" parent="Sprite2D" unique_id=258988130]
+position = Vector2(4, 158)
+texture = ExtResource("6_ierck")
+
+[node name="Gach51" type="Sprite2D" parent="Sprite2D" unique_id=155803274]
+position = Vector2(4, 165)
+texture = ExtResource("7_kyjxe")
+
+[node name="Gach52" type="Sprite2D" parent="Sprite2D" unique_id=1578652623]
+position = Vector2(316, 16.000002)
+rotation = -3.1415925
+texture = ExtResource("6_ierck")
+
+[node name="Gach53" type="Sprite2D" parent="Sprite2D" unique_id=324397808]
+position = Vector2(316, 25.000002)
+rotation = -3.1415925
+texture = ExtResource("7_kyjxe")
+
+[node name="Gach54" type="Sprite2D" parent="Sprite2D" unique_id=552130576]
+position = Vector2(316, 35)
+rotation = -3.1415925
+texture = ExtResource("6_ierck")
+
+[node name="Gach55" type="Sprite2D" parent="Sprite2D" unique_id=641603301]
+position = Vector2(316, 46)
+rotation = -3.1415925
+texture = ExtResource("6_ierck")
+
+[node name="Gach56" type="Sprite2D" parent="Sprite2D" unique_id=1911275504]
+position = Vector2(316, 56)
+rotation = -3.1415925
+texture = ExtResource("7_kyjxe")
+
+[node name="Gach57" type="Sprite2D" parent="Sprite2D" unique_id=1221105061]
+position = Vector2(316, 67)
+rotation = -3.1415925
+texture = ExtResource("6_ierck")
+
+[node name="Gach59" type="Sprite2D" parent="Sprite2D" unique_id=1838678879]
+position = Vector2(316, 119)
+rotation = -3.1415925
+texture = ExtResource("6_ierck")
+
+[node name="Gach60" type="Sprite2D" parent="Sprite2D" unique_id=246036656]
+position = Vector2(316, 128)
+rotation = -3.1415925
+texture = ExtResource("7_kyjxe")
+
+[node name="Gach61" type="Sprite2D" parent="Sprite2D" unique_id=1018547670]
+position = Vector2(316, 137)
+rotation = -3.1415925
+texture = ExtResource("6_ierck")
+
+[node name="Gach62" type="Sprite2D" parent="Sprite2D" unique_id=166291939]
+position = Vector2(316, 148)
+rotation = -3.1415925
+texture = ExtResource("7_kyjxe")
+
+[node name="Gach63" type="Sprite2D" parent="Sprite2D" unique_id=350156292]
+position = Vector2(316, 159)
+rotation = -3.1415925
+texture = ExtResource("6_ierck")
+
+[node name="Gach64" type="Sprite2D" parent="Sprite2D" unique_id=2005699828]
+position = Vector2(316, 166)
+rotation = -3.1415925
+texture = ExtResource("7_kyjxe")
+
+[node name="Gach58" type="Sprite2D" parent="Sprite2D" unique_id=768695511]
+position = Vector2(17, 119)
+texture = ExtResource("3_w36hb")
+
+[node name="Gach65" type="Sprite2D" parent="Sprite2D" unique_id=625715346]
+position = Vector2(33, 119)
+texture = ExtResource("2_ip0a1")
+
+[node name="Gach66" type="Sprite2D" parent="Sprite2D" unique_id=251414000]
+position = Vector2(48, 119)
+texture = ExtResource("4_h2xgo")
+
+[node name="Gach67" type="Sprite2D" parent="Sprite2D" unique_id=947629195]
+position = Vector2(64, 119)
+texture = ExtResource("4_h2xgo")
+
+[node name="Gach68" type="Sprite2D" parent="Sprite2D" unique_id=789559986]
+position = Vector2(86, 119)
+texture = ExtResource("5_vbm8d")
+
+[node name="Gach69" type="Sprite2D" parent="Sprite2D" unique_id=1522304389]
+position = Vector2(107, 119)
+texture = ExtResource("1_0m056")
+
+[node name="Gach70" type="Sprite2D" parent="Sprite2D" unique_id=509501959]
+position = Vector2(126, 119)
+texture = ExtResource("2_ip0a1")
+
+[node name="Gach71" type="Sprite2D" parent="Sprite2D" unique_id=699814496]
+position = Vector2(147, 119)
+texture = ExtResource("3_w36hb")
+
+[node name="Gach72" type="Sprite2D" parent="Sprite2D" unique_id=1714025152]
+position = Vector2(163, 119)
+texture = ExtResource("2_ip0a1")
+
+[node name="Gach73" type="Sprite2D" parent="Sprite2D" unique_id=1695995403]
+position = Vector2(178, 119)
+texture = ExtResource("4_h2xgo")
+
+[node name="Gach74" type="Sprite2D" parent="Sprite2D" unique_id=2052271632]
+position = Vector2(194, 119)
+texture = ExtResource("4_h2xgo")
+
+[node name="Gach75" type="Sprite2D" parent="Sprite2D" unique_id=784620242]
+position = Vector2(262, 118)
+texture = ExtResource("4_h2xgo")
+
+[node name="Gach76" type="Sprite2D" parent="Sprite2D" unique_id=978123063]
+position = Vector2(278, 118)
+texture = ExtResource("4_h2xgo")
+
+[node name="Gach77" type="Sprite2D" parent="Sprite2D" unique_id=1207844919]
+position = Vector2(300, 118)
+texture = ExtResource("5_vbm8d")
+
+[node name="Gach78" type="Sprite2D" parent="Sprite2D" unique_id=2066780332]
+position = Vector2(255, 129)
+rotation = -3.1415925
+texture = ExtResource("6_ierck")
+
+[node name="Gach79" type="Sprite2D" parent="Sprite2D" unique_id=1230842645]
+position = Vector2(255, 139)
+rotation = -3.1415925
+texture = ExtResource("7_kyjxe")
+
+[node name="Gach80" type="Sprite2D" parent="Sprite2D" unique_id=170618729]
+position = Vector2(255, 150)
+rotation = -3.1415925
+texture = ExtResource("6_ierck")
+
+[node name="Gach81" type="Sprite2D" parent="Sprite2D" unique_id=1546841506]
+position = Vector2(255, 161)
+rotation = -3.1415925
+texture = ExtResource("7_kyjxe")
+
+[node name="Gach82" type="Sprite2D" parent="Sprite2D" unique_id=1837757411]
+position = Vector2(255, 165)
+rotation = -3.1415925
+texture = ExtResource("6_ierck")
+
+[node name="Gach83" type="Sprite2D" parent="Sprite2D" unique_id=1702701524]
+position = Vector2(202, 67)
+rotation = -3.1415925
+texture = ExtResource("7_kyjxe")
+
+[node name="Gach84" type="Sprite2D" parent="Sprite2D" unique_id=1893774507]
+position = Vector2(216, 67)
+texture = ExtResource("3_w36hb")
+
+[node name="Gach85" type="Sprite2D" parent="Sprite2D" unique_id=620318391]
+position = Vector2(232, 67)
+texture = ExtResource("2_ip0a1")
+
+[node name="Gach86" type="Sprite2D" parent="Sprite2D" unique_id=240184474]
+position = Vector2(247, 67)
+texture = ExtResource("4_h2xgo")
+
+[node name="Gach87" type="Sprite2D" parent="Sprite2D" unique_id=768963339]
+position = Vector2(263, 67)
+texture = ExtResource("4_h2xgo")
+
+[node name="Gach88" type="Sprite2D" parent="Sprite2D" unique_id=1214498963]
+position = Vector2(285, 67)
+texture = ExtResource("5_vbm8d")
+
+[node name="Gach89" type="Sprite2D" parent="Sprite2D" unique_id=2029756998]
+position = Vector2(307, 67)
+texture = ExtResource("8_ip0a1")
+
+[node name="Gach91" type="Sprite2D" parent="Sprite2D" unique_id=1641648656]
+position = Vector2(202, 108.00001)
+texture = ExtResource("6_ierck")
+
+[node name="Gach92" type="Sprite2D" parent="Sprite2D" unique_id=1564181656]
+position = Vector2(202, 97)
+texture = ExtResource("6_ierck")
+
+[node name="Gach93" type="Sprite2D" parent="Sprite2D" unique_id=1613081329]
+position = Vector2(202, 87)
+texture = ExtResource("7_kyjxe")
+
+[node name="Gach90" type="Sprite2D" parent="Sprite2D" unique_id=687345162]
+position = Vector2(202, 76)
+texture = ExtResource("7_kyjxe")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=917362739]
+polygon = PackedVector2Array(0, 1, 319, 0, 320, 72, 205, 72, 206, 124, 9, 125, 9, 169, 250, 169, 251, 113, 320, 113, 320, 180, 0, 181)

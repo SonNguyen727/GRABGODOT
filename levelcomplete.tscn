@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dmykyvfbhc0al"]
+
+[ext_resource type="Texture2D" uid="uid://ca20t6mbtwaq1" path="res://ui/heart_ui_full.png" id="1_qe2d0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jna7l"]
+radius = 3.0
+
+[node name="Area2D" type="Area2D" unique_id=1063207454]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1318858881]
+texture = ExtResource("1_qe2d0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=299050337]
+shape = SubResource("CircleShape2D_jna7l")

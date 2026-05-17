@@ -27,7 +27,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3cn6f"]
-size = Vector2(32, 32)
+size = Vector2(22, 29)
 
 [node name="robot" type="CharacterBody2D" unique_id=771216797]
 position = Vector2(110, 46)
@@ -38,4 +38,5 @@ sprite_frames = SubResource("SpriteFrames_yyxj1")
 animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1711849170]
+position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_3cn6f")
