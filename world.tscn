@@ -1,20 +1,24 @@
 [gd_scene format=3 uid="uid://ckavqb25bdaul"]
 
 [ext_resource type="PackedScene" uid="uid://duce1js2k5ycf" path="res://robot.tscn" id="1_fj7yv"]
-[ext_resource type="Texture2D" uid="uid://cg65ihg3xkn7j" path="res://world/grass_background.png" id="1_tlwt5"]
 [ext_resource type="Script" uid="uid://c17u2g1qhhvr0" path="res://robot.gd" id="2_tlwt5"]
 [ext_resource type="PackedScene" uid="uid://bh7r8vnjl1m7u" path="res://arm.tscn" id="3_tlwt5"]
+[ext_resource type="PackedScene" uid="uid://c1t72k6odd4xv" path="res://wall.tscn" id="4_aqk2v"]
+[ext_resource type="PackedScene" uid="uid://dmykyvfbhc0al" path="res://levelcomplete.tscn" id="5_dwbse"]
+[ext_resource type="Script" uid="uid://bvs4byapi57r5" path="res://levelcomplete.gd" id="6_pkg7o"]
 
 [node name="World" type="Node2D" unique_id=1300613891]
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=754919046]
-offset_right = 320.0
-offset_bottom = 180.0
-texture = ExtResource("1_tlwt5")
-stretch_mode = 1
-
 [node name="robot" parent="." unique_id=771216797 instance=ExtResource("1_fj7yv")]
-position = Vector2(118, 74)
+position = Vector2(39, 147)
 script = ExtResource("2_tlwt5")
 
 [node name="arm" parent="." unique_id=866574625 instance=ExtResource("3_tlwt5")]
+position = Vector2(99, 146)
+
+[node name="StaticBody2D" parent="." unique_id=1049344274 instance=ExtResource("4_aqk2v")]
+position = Vector2(1, 1)
+
+[node name="Area2D" parent="." unique_id=1063207454 instance=ExtResource("5_dwbse")]
+position = Vector2(312, 93)
+script = ExtResource("6_pkg7o")

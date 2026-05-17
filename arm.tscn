@@ -4,8 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://d3h7jec4ss1pb" path="res://player/sprite.png" id="2_wbqlu"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_s02i6"]
-radius = 4.8759155
-height = 21.257965
+radius = 1.2946413
+height = 2.5892825
 
 [node name="arm" type="Node2D" unique_id=866574625]
 position = Vector2(0, 1)

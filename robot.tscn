@@ -1,17 +1,42 @@
 [gd_scene format=3 uid="uid://duce1js2k5ycf"]
 
-[ext_resource type="Texture2D" uid="uid://b014cl6g6amej" path="res://player/player.png" id="1_3cn6f"]
+[ext_resource type="Texture2D" uid="uid://mkvrh8pwvk5h" path="res://art/Robot/chinhdien1.png" id="1_yhfw1"]
+[ext_resource type="Texture2D" uid="uid://deird0m3rfr8c" path="res://art/Robot/robotpng-export.png" id="2_ru5oq"]
+[ext_resource type="Texture2D" uid="uid://b6y4brwj4p4b7" path="res://art/Robot/Sprite-0001.png" id="3_7xofo"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yyxj1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_yhfw1")
+}],
+"loop": false,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ru5oq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_7xofo")
+}],
+"loop": true,
+"name": &"moving",
+"speed": 7.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3cn6f"]
-size = Vector2(32, 32)
+size = Vector2(22, 29)
 
 [node name="robot" type="CharacterBody2D" unique_id=771216797]
 position = Vector2(110, 46)
 disable_mode = 2
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1680686774]
-texture = ExtResource("1_3cn6f")
-hframes = 4
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1210448428]
+sprite_frames = SubResource("SpriteFrames_yyxj1")
+animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1711849170]
+position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_3cn6f")
