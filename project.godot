@@ -31,6 +31,11 @@ window/stretch/mode="canvas_items"
 
 enabled=PackedStringArray("res://addons/godot_ai/plugin.cfg")
 
+[gui]
+
+theme/custom="res://ui/game_theme.tres"
+theme/custom_font="uid://cck771w6sc0dj"
+
 [input]
 
 mouse_left={
@@ -45,6 +50,6 @@ mouse_left={
 
 [rendering]
 
-environment/defaults/default_clear_color=Color(0.050980393, 0.074509804, 0.16862746, 1)
 textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
+environment/defaults/default_clear_color=Color(0.050980393, 0.07450981, 0.16862746, 1)

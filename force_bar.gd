@@ -4,7 +4,7 @@ extends Control
 const BAR_WIDTH := 36.0
 const BAR_HEIGHT := 5.0
 const COLOR_BG := Color(0.050980393, 0.074509804, 0.16862746, 1.0)
-const COLOR_FILL := Color(0.93, 0.91, 0.82, 1.0)
+const COLOR_FILL := Color(0.6745098, 0.7647059, 0.9333333, 1.0)
 
 @onready var _fill: ColorRect = $Fill
 
@@ -19,4 +19,5 @@ func _ready() -> void:
 	$Bg.offset_right = BAR_WIDTH
 	$Bg.offset_bottom = BAR_HEIGHT
 	_fill.offset_bottom = BAR_HEIGHT
+	_fill.color = COLOR_FILL
 	set_ratio(0.0)

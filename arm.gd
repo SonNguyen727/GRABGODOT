@@ -7,8 +7,7 @@ const AIM_DEADZONE := 4.0
 const ARROW_ANCHOR_OFFSET := Vector2(0.0, 0.0)
 const FORCE_BAR_OFFSET := Vector2(-18.0, -22.0)
 
-const COLOR_ARROW_ON := Color(0.93, 0.91, 0.82, 1.0)
-const COLOR_ARROW_OFF := Color(0, 0, 0, 0 )
+
 
 var grabbed_robot: Robot = null
 var aim_direction: Vector2 = Vector2.RIGHT
@@ -98,7 +97,6 @@ func _update_hold_aim(delta: float) -> void:
 
 
 func _set_arrow_highlight(arrow: Sprite2D, active: bool) -> void:
-	arrow.modulate = COLOR_ARROW_ON if active else COLOR_ARROW_OFF
 	arrow.scale = Vector2(1.2, 1.2) if active else Vector2.ONE
 
 
