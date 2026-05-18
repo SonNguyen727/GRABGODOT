@@ -1,70 +1,78 @@
-[gd_scene load_steps=8 format=3 uid="uid://bh7r8vnjl1m7u"]
+[gd_scene format=3 uid="uid://bh7r8vnjl1m7u"]
 
 [ext_resource type="Script" uid="uid://cn5dklraqr1yw" path="res://arm.gd" id="1_m8ymp"]
-[ext_resource type="Script" path="res://force_bar.gd" id="2_force_bar"]
+[ext_resource type="Script" uid="uid://bfbsb1s2lawyl" path="res://force_bar.gd" id="2_force_bar"]
 [ext_resource type="Texture2D" uid="uid://d3h7jec4ss1pb" path="res://player/sprite.png" id="2_wbqlu"]
-[ext_resource type="Texture2D" path="res://ui/arrows/arrow_up.svg" id="3_arrow_up"]
-[ext_resource type="Texture2D" path="res://ui/arrows/arrow_down.svg" id="4_arrow_down"]
-[ext_resource type="Texture2D" path="res://ui/arrows/arrow_left.svg" id="5_arrow_left"]
-[ext_resource type="Texture2D" path="res://ui/arrows/arrow_right.svg" id="6_arrow_right"]
+[ext_resource type="Texture2D" uid="uid://bwyc367toq8he" path="res://ui/arrows/arrows.png" id="3_s02i6"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_s02i6"]
 radius = 1.2946413
 height = 2.5892825
 
-[node name="arm" type="Node2D"]
+[node name="arm" type="Node2D" unique_id=1233013458]
+z_index = 100
 position = Vector2(0, 1)
 script = ExtResource("1_m8ymp")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=363241083]
 position = Vector2(18, 12)
 texture = ExtResource("2_wbqlu")
 
-[node name="AimArrows" type="Node2D" parent="."]
+[node name="AimArrows" type="Node2D" parent="." unique_id=745129004]
 visible = false
 position = Vector2(18, 12)
 
-[node name="ArrowUp" type="Sprite2D" parent="AimArrows"]
+[node name="ArrowUp" type="Sprite2D" parent="AimArrows" unique_id=1428050942]
 position = Vector2(0, -14)
-texture = ExtResource("3_arrow_up")
+texture = ExtResource("3_s02i6")
+region_enabled = true
+region_rect = Rect2(48.04826, 2.0225515, 15.83799, 12.995273)
 
-[node name="ArrowDown" type="Sprite2D" parent="AimArrows"]
+[node name="ArrowDown" type="Sprite2D" parent="AimArrows" unique_id=565843275]
 position = Vector2(0, 14)
-texture = ExtResource("4_arrow_down")
+texture = ExtResource("3_s02i6")
+region_enabled = true
+region_rect = Rect2(15.973226, 1.9769096, 15.939513, 12.995271)
 
-[node name="ArrowLeft" type="Sprite2D" parent="AimArrows"]
+[node name="ArrowLeft" type="Sprite2D" parent="AimArrows" unique_id=1937042586]
 position = Vector2(-14, 0)
-texture = ExtResource("5_arrow_left")
+texture = ExtResource("3_s02i6")
+region_enabled = true
+region_rect = Rect2(81.911125, -0.051237583, 13.198326, 16.24409)
 
-[node name="ArrowRight" type="Sprite2D" parent="AimArrows"]
+[node name="ArrowRight" type="Sprite2D" parent="AimArrows" unique_id=1779309614]
 position = Vector2(14, 0)
-texture = ExtResource("6_arrow_right")
+texture = ExtResource("3_s02i6")
+region_enabled = true
+region_rect = Rect2(113.93821, -0.39036942, 13.429886, 16.326538)
 
-[node name="ForceBarLayer" type="CanvasLayer" parent="."]
+[node name="ForceBarLayer" type="CanvasLayer" parent="." unique_id=1893243223]
+layer = 11
 
-[node name="ForceBar" type="Control" parent="ForceBarLayer"]
+[node name="ForceBar" type="Control" parent="ForceBarLayer" unique_id=2103588619]
 visible = false
-layout_mode = 0
+layout_mode = 3
+anchors_preset = 0
 offset_right = 36.0
 offset_bottom = 5.0
 script = ExtResource("2_force_bar")
 
-[node name="Bg" type="ColorRect" parent="ForceBarLayer/ForceBar"]
+[node name="Bg" type="ColorRect" parent="ForceBarLayer/ForceBar" unique_id=535196101]
 layout_mode = 0
 offset_right = 36.0
 offset_bottom = 5.0
-color = Color(0.07, 0.09, 0.14, 1)
+color = Color(0.050980393, 0.074509804, 0.16862746, 1)
 
-[node name="Fill" type="ColorRect" parent="ForceBarLayer/ForceBar"]
+[node name="Fill" type="ColorRect" parent="ForceBarLayer/ForceBar" unique_id=950300129]
 layout_mode = 0
 offset_bottom = 5.0
 color = Color(0.93, 0.91, 0.82, 1)
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="." unique_id=198492302]
 position = Vector2(3, 4)
 disable_mode = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=862665762]
 position = Vector2(-2, -3.0000076)
 rotation = 0.8667356
 shape = SubResource("CapsuleShape2D_s02i6")

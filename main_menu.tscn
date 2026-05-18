@@ -15,14 +15,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Background" type="ColorRect" parent="CanvasLayer/UI" unique_id=1118166917]
+[node name="Background" type="ColorRect" parent="CanvasLayer/UI"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.07, 0.09, 0.14, 1)
+mouse_filter = 2
+color = Color(0.050980393, 0.074509804, 0.16862746, 1)
 
 [node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/UI" unique_id=1752917880]
 layout_mode = 1
@@ -75,7 +76,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.07, 0.09, 0.14, 1)
+color = Color(0.050980393, 0.078431375, 0.16862746, 1)
 
 [node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/UI/SettingsPanel" unique_id=448805982]
 layout_mode = 1

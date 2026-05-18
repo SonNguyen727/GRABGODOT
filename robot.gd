@@ -2,12 +2,14 @@ class_name Robot
 extends CharacterBody2D
 
 const MOVE_SPEED := 50.0
+const THROW_DISTANCE_SCALE := 0.28
 
 var speed := MOVE_SPEED
 var grabbed := false
 var arm: Node2D = null
 
 var _throw_velocity := Vector2.ZERO
+var _throw_distance_left := 0.0
 var _hold_position := Vector2.ZERO
 
 @onready var anim: AnimatedSprite2D = $AnimatedSprite2D
@@ -30,7 +32,8 @@ func _physics_process(_delta: float) -> void:
 		anim.play("moving")
 		velocity = _throw_velocity
 		move_and_slide()
-		if get_slide_collision_count() > 0:
+		_throw_distance_left -= velocity.length() * _delta
+		if _throw_distance_left <= 0.0:
 			clear_throw()
 		return
 
@@ -46,8 +49,10 @@ func begin_hold() -> void:
 
 func throw(direction: Vector2, throw_speed: float) -> void:
 	_throw_velocity = direction.normalized() * throw_speed
+	_throw_distance_left = throw_speed * THROW_DISTANCE_SCALE
 
 
 func clear_throw() -> void:
 	_throw_velocity = Vector2.ZERO
+	_throw_distance_left = 0.0
 	velocity = Vector2.ZERO

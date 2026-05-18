@@ -10,6 +10,15 @@
 
 [node name="World" type="Node2D" unique_id=1300613891]
 
+[node name="Background" type="CanvasLayer" parent="." unique_id=856219507]
+layer = -10
+
+[node name="ColorRect" type="ColorRect" parent="Background" unique_id=495076397]
+offset_right = 320.0
+offset_bottom = 180.0
+mouse_filter = 2
+color = Color(0.050980393, 0.07450981, 0.16862746, 1)
+
 [node name="robot" parent="." unique_id=771216797 instance=ExtResource("1_fj7yv")]
 position = Vector2(39, 147)
 script = ExtResource("2_tlwt5")
@@ -18,10 +27,13 @@ script = ExtResource("2_tlwt5")
 position = Vector2(1, 1)
 
 [node name="heart_goal" parent="." unique_id=1063207454 instance=ExtResource("5_dwbse")]
-position = Vector2(305, 96)
+position = Vector2(342, 95)
 script = ExtResource("6_pkg7o")
 
-[node name="LevelUI" parent="." unique_id=2070637358 instance=ExtResource("7_level_ui")]
+[node name="ArmLayer" type="CanvasLayer" parent="."]
+layer = 10
 
-[node name="arm" parent="." unique_id=866574625 instance=ExtResource("3_tlwt5")]
+[node name="arm" parent="ArmLayer" unique_id=866574625 instance=ExtResource("3_tlwt5")]
 position = Vector2(99, 146)
+
+[node name="LevelUI" parent="." unique_id=2070637358 instance=ExtResource("7_level_ui")]

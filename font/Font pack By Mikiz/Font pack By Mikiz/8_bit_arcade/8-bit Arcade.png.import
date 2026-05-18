@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brwxo1ysxma80"
-path="res://.godot/imported/arrow_down.svg-97d52ce86af375e46f43773b2804b2b7.ctex"
+uid="uid://b438jfyidt1it"
+path="res://.godot/imported/8-bit Arcade.png-620dbedbb417b09ca2f9477295349716.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ui/arrows/arrow_down.svg"
-dest_files=["res://.godot/imported/arrow_down.svg-97d52ce86af375e46f43773b2804b2b7.ctex"]
+source_file="res://font/Font pack By Mikiz/Font pack By Mikiz/8_bit_arcade/8-bit Arcade.png"
+dest_files=["res://.godot/imported/8-bit Arcade.png-620dbedbb417b09ca2f9477295349716.ctex"]
 
 [params]
 
@@ -38,6 +38,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false

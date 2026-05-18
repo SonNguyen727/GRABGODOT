@@ -3,7 +3,7 @@ extends Control
 
 const BAR_WIDTH := 36.0
 const BAR_HEIGHT := 5.0
-const COLOR_BG := Color(0.07, 0.09, 0.14, 1.0)
+const COLOR_BG := Color(0.050980393, 0.074509804, 0.16862746, 1.0)
 const COLOR_FILL := Color(0.93, 0.91, 0.82, 1.0)
 
 @onready var _fill: ColorRect = $Fill

@@ -1,6 +1,6 @@
 extends Node
 
-const COLOR_BG := Color(0.07, 0.09, 0.14)
+const COLOR_BG := Color(0.050980393, 0.074509804, 0.16862746)
 const COLOR_FG := Color(0.93, 0.91, 0.82)
 
 @onready var _menu: VBoxContainer = $CanvasLayer/UI/CenterContainer/MenuButtons

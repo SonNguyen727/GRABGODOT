@@ -1,14 +1,14 @@
 extends Node2D
 
-const MIN_THROW_SPEED := 80.0
-const MAX_THROW_SPEED := 280.0
+const MIN_THROW_SPEED := 60.0
+const MAX_THROW_SPEED := 180.0
 const FORCE_CHARGE_SPEED := 0.65
 const AIM_DEADZONE := 4.0
 const ARROW_ANCHOR_OFFSET := Vector2(0.0, 0.0)
 const FORCE_BAR_OFFSET := Vector2(-18.0, -22.0)
 
 const COLOR_ARROW_ON := Color(0.93, 0.91, 0.82, 1.0)
-const COLOR_ARROW_OFF := Color(0.93, 0.91, 0.82, 0.25)
+const COLOR_ARROW_OFF := Color(0, 0, 0, 0 )
 
 var grabbed_robot: Robot = null
 var aim_direction: Vector2 = Vector2.RIGHT

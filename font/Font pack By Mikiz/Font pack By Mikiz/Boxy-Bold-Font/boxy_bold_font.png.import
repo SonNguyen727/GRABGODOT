@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://thwo44x5f8ry"
-path="res://.godot/imported/arrow_left.svg-a1baca77c4e67dda8486cba3451cb4ca.ctex"
+uid="uid://bo5vu7lflov6n"
+path="res://.godot/imported/boxy_bold_font.png-ab7ce5b3c3a96aed2be5eba1f707f45c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ui/arrows/arrow_left.svg"
-dest_files=["res://.godot/imported/arrow_left.svg-a1baca77c4e67dda8486cba3451cb4ca.ctex"]
+source_file="res://font/Font pack By Mikiz/Font pack By Mikiz/Boxy-Bold-Font/boxy_bold_font.png"
+dest_files=["res://.godot/imported/boxy_bold_font.png-ab7ce5b3c3a96aed2be5eba1f707f45c.ctex"]
 
 [params]
 
@@ -38,6 +38,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false
