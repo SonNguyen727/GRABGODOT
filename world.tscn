@@ -14,9 +14,6 @@
 position = Vector2(39, 147)
 script = ExtResource("2_tlwt5")
 
-[node name="arm" parent="." unique_id=866574625 instance=ExtResource("3_tlwt5")]
-position = Vector2(99, 146)
-
 [node name="StaticBody2D" parent="." unique_id=1049344274 instance=ExtResource("4_aqk2v")]
 position = Vector2(1, 1)
 
@@ -25,3 +22,6 @@ position = Vector2(305, 96)
 script = ExtResource("6_pkg7o")
 
 [node name="LevelUI" parent="." unique_id=2070637358 instance=ExtResource("7_level_ui")]
+
+[node name="arm" parent="." unique_id=866574625 instance=ExtResource("3_tlwt5")]
+position = Vector2(99, 146)

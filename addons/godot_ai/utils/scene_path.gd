@@ -74,7 +74,23 @@ static func resolve(scene_path: String, scene_root: Node) -> Node:
 static func require_edited_scene(expected_scene_file: String) -> Dictionary:
 	var root := EditorInterface.get_edited_scene_root()
 	if root == null:
-		return ErrorCodes.make(ErrorCodes.EDITOR_NOT_READY, "No scene open")
+		# Mirrors the structured payload that the Python-side require_writable
+		# gate attaches for `playing` / `importing`. Together these cover the
+		# three recoverable editor *states* (playing / importing / no_scene)
+		# — the EDITOR_NOT_READY paths an AI caller can act on. Other
+		# EDITOR_NOT_READY callsites describing internal-state failures
+		# ("EditorFileSystem not available" etc.) intentionally don't carry
+		# this payload because there's no useful caller hint to give.
+		var err := ErrorCodes.make(ErrorCodes.EDITOR_NOT_READY, "No scene open")
+		err["error"]["data"] = {
+			"editor_state": "no_scene",
+			"retryable": false,
+			"hint": (
+				"No scene is open. Call scene_open with a scene path "
+				+ "(e.g. \"res://main.tscn\") before issuing scene-mutating tools."
+			),
+		}
+		return err
 	if not expected_scene_file.is_empty() and root.scene_file_path != expected_scene_file:
 		var actual := root.scene_file_path if not root.scene_file_path.is_empty() else "<unsaved>"
 		return ErrorCodes.make(

@@ -279,6 +279,7 @@ func _enter_tree() -> void:
 	_dispatcher.register("get_performance_monitors", editor_handler.get_performance_monitors)
 	_dispatcher.register("reload_plugin", editor_handler.reload_plugin)
 	_dispatcher.register("quit_editor", editor_handler.quit_editor)
+	_dispatcher.register("game_eval", editor_handler.game_eval)
 	_dispatcher.register("get_project_setting", project_handler.get_project_setting)
 	_dispatcher.register("set_project_setting", project_handler.set_project_setting)
 	_dispatcher.register("run_project", project_handler.run_project)
@@ -533,7 +534,7 @@ static func _mcp_disabled_for_headless_launch() -> bool:
 
 
 static func _mcp_disabled_for_headless(args: PackedStringArray, display_name: String, allow_value: String) -> bool:
-	if _env_truthy(allow_value):
+	if McpSettings.truthy(allow_value):
 		return false
 	return _args_request_headless(args) or display_name.to_lower() == "headless"
 
@@ -550,12 +551,6 @@ static func _args_request_headless(args: PackedStringArray) -> bool:
 	return false
 
 
-static func _env_truthy(value: String) -> bool:
-	match value.strip_edges().to_lower():
-		"1", "true", "yes", "on":
-			return true
-		_:
-			return false
 
 
 func _disable_plugin() -> void:
@@ -1537,7 +1532,10 @@ func start_dev_server() -> void:
 			var new_pp := worktree_src if prev_pythonpath.is_empty() else worktree_src + sep + prev_pythonpath
 			OS.set_environment("PYTHONPATH", new_pp)
 
+		var injected_telemetry: bool = _lifecycle._inject_telemetry_env()
 		var pid := OS.create_process(cmd, inner_args)
+		if injected_telemetry:
+			OS.unset_environment("GODOT_AI_DISABLE_TELEMETRY")
 
 		## Restore PYTHONPATH immediately — the spawned child has already
 		## copied the env, so the editor's own process state returns to
